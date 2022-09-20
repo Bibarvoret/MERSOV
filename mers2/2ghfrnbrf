@@ -1,0 +1,18 @@
+#include "stdio.h"
+#include "math.h"
+
+int main()
+{
+    // 2 практика вариант 4
+    double a;
+    double y = 10;
+    double x = 4;
+    double z;
+    double xm;
+    //x = 4;
+    xm = - sqrt(fabs(x));
+    a = log(pow(y, xm))*(x-(y/2));
+
+    printf("%f %f %f ", x, xm,a);
+
+}
