@@ -5,14 +5,14 @@ int main()
 {
     // 2 практика вариант 4
     double a;
-    double y = 10;
-    double x = 4;
-    double z;
+    double y = 4.642 * pow(10, -2);
+    double x = -15.246;
+    double z = 20.001 * 100;
     double xm;
     //x = 4;
     xm = - sqrt(fabs(x));
-    a = log(pow(y, xm))*(x-(y/2));
+    a = log(pow(y, xm))*(x-(y/2))+pow(sin(atan(z)), 2);
 
-    printf("%f %f %f ", x, xm,a);
+    printf("%f %f %f %f", x, y, z, a);
 
 }
