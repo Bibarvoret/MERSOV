@@ -1,0 +1,12 @@
+#include "stdio.h"
+#include "math.h"
+
+int main()
+{
+    double a, x, y, z;
+    double xm;
+    scanf_s("%lf %lf %lf", &x, &y, &z);
+    xm = - sqrt(fabs(x));
+    a = log(pow(y, xm))*(x-(y/2))+pow(sin(atan(z)), 2);
+    printf("%lf", a);
+}
