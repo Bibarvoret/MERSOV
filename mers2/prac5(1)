@@ -1,0 +1,21 @@
+//57856
+
+#include <stdio.h>
+
+int main()
+{
+    unsigned short y = 57856;
+    unsigned short d, r, a, temp;
+    printf("\n input direction(0-1)                        : "); scanf_s("%hu",&d); // направление передачи в регистр/память
+    printf("\n input first operand(0-15)                   : "); scanf_s("%hu",&r); // 1-ый операнд - регистр
+    printf("\n input register of 2nd's operand adress(0-15): "); scanf_s("%hu",&a); // регистр адреса второго операнда
+    temp = d & 1; // отброс старшего разряда
+    y = y | (temp << 8);
+    temp = r & 15;
+    y = y | (temp << 4);
+    temp = a & 15;
+    y = y | temp;
+    printf("\npacked value: decimal=%hu hex=%x", y, y);
+
+
+}
