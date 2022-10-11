@@ -18,4 +18,17 @@ int main()
     printf("\npacked value: decimal=%hu hex=%x", y, y);
 
 
+
+//2
+    unsigned short y = 57856;
+    unsigned short d, r, a, temp;
+    int flag = 0;
+    printf("\n hex/dec(0-1):");
+    scanf_s("%d", &flag);
+    if (flag) { printf("\n in dec: "); scanf_s("%hu", &y); }
+    else { printf("\n in hex: "); scanf_s("%hx", &y); }
+    d = y >> 8;
+    temp = y < 1;
+
+
 }
