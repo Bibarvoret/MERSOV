@@ -1,0 +1,28 @@
+// ближайшее кратное 4 к 34: 32
+//34-32=2
+//вариант 2, до вечера пятницы
+
+#include <iostream>
+#include "stdio.h"
+int main()
+{
+    int n_prog;
+    start: printf("vvedite nomer programmy: 1 standart, 2 adressnaya arifmetika\n");
+    scanf_s("%d", &n_prog);
+    switch (n_prog)
+    { 
+    case 1:
+    
+        printf("1");
+        break;
+    
+    case 2:
+    
+        printf("z");
+        break;
+    default:
+        printf("error");
+        goto start;
+        
+    }
+}
