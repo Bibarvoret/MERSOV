@@ -1,0 +1,39 @@
+// ближайшее кратное 4 к 34: 32
+//34-32=2
+//вариант 2, до вечера пятницы. Задача: объединить две строки в одну
+
+#include <iostream>
+//#include <string.h>
+#include "stdio.h"
+int main()
+{
+    int n_prog;
+    start: printf("vvedite nomer programmy: 1 standart, 2 adressnaya arifmetika\n");
+    scanf_s("%d", &n_prog);
+    char string1[1000];
+    printf("vvedite STRING1: ");
+    gets_s(string1);
+    gets_s(string1, 1000); //получаю первую строку
+    char string2[1000];
+    printf("vvedite STRING2: ");
+    gets_s(string2, 1000); //получаю вторую строку
+    switch (n_prog)
+    { 
+    case 1:
+        char string3[1000];
+        for (int i = 0; i < strlen(string1), i++;) //вот тут доработать 
+            printf("string[%d] = %s",i,string1[i]);
+            //string3[i] = string1[i];
+        printf("string3 = %s", string1);
+        break;
+    
+    case 2:
+    
+        printf("z");
+        break;
+    default:
+        printf("error");
+        goto start;
+        
+    }
+}
